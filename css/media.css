@@ -1,0 +1,123 @@
+@media (max-width: 960px) {
+    .menu__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+     }
+     .menu__burger span{
+        position: absolute;
+        background-color: #000;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s;
+     }
+     .menu__burger:before,
+     .menu__burger:after{
+         content: "";
+         background-color: #000;
+         position: absolute;
+         width: 100%;
+         height: 2px;
+         left: 0;
+         transition: all .3s;
+    }
+    .menu__burger:before{
+        top: 0;
+    }
+    .menu__burger:after{
+        bottom: 0;
+
+    }
+    .menu__burger.active:before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .menu__burger.active:after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .menu__burger.active span{
+        transform: scale(0)
+
+    }
+    .header__menu { 
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        padding: 0px 0 0 20px;
+        background-color: #fff;
+        z-index: 4;
+    }
+    .header__menu.active {
+        display: block;
+        z-index: 10;
+    }
+    .header__menu li{
+        display: block;
+        margin-bottom: 15px;
+    }
+    .header__menu li+li {
+        margin-left: 0px;
+    } 
+    .works__inner-title::after{
+        display: none;
+    }
+    .works{
+        margin-top: 15px;
+    }
+    
+    
+}
+@media (max-width: 930px){
+    .works__inner-works{
+        flex-wrap: wrap;
+                
+}
+.footer__inner{
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.footer__item.footer__item-about,
+.footer__item-text{
+    width: 100%;
+
+}
+}
+@media (max-width: 860px){
+    .item {
+        margin-right: 15px;
+    }
+}
+@media (max-width: 837px){
+    .items__inner {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+}
+@media (max-width: 680px) {
+    .works__inner-works{
+        flex-wrap: wrap;
+        justify-content: space-around;
+}
+}
+@media(max-width: 594px){
+    .item{
+        padding-right: 0px;
+        max-width: 100%;
+        margin-top: 25px;
+    }
+}
+@media (max-width: 500px) {
+    .slider__box {
+        margin-right: 15px;
+    }
+}
+
+
+
